@@ -14,6 +14,7 @@ module.exports = function(api) {
         '.'
     )
   }
+  console.log('Current env is:', currentEnv)
 
   return {
     presets: [
@@ -46,6 +47,7 @@ module.exports = function(api) {
     plugins: [
       require('babel-plugin-macros'),
       require('@babel/plugin-syntax-dynamic-import').default,
+      require("react-hot-loader/babel"),
       isTestEnv && require('babel-plugin-dynamic-import-node'),
       require('@babel/plugin-transform-destructuring').default,
       [

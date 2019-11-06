@@ -11,6 +11,7 @@
     "react_ujs": "^2.6.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "react-hot-loader": "^4.12.15"
   }
 }

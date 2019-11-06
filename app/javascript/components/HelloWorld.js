@@ -1,10 +1,11 @@
+import { hot } from 'react-hot-loader/root'
 import React from "react"
 import PropTypes from "prop-types"
 class HelloWorld extends React.Component {
   render () {
     return (
       <React.Fragment>
-        Greeting Old: {this.props.greeting}
+        Greeting Hello2: {this.props.greeting}
       </React.Fragment>
     );
   }
@@ -13,4 +14,4 @@ class HelloWorld extends React.Component {
 HelloWorld.propTypes = {
   greeting: PropTypes.string
 };
-export default HelloWorld
+export default hot(HelloWorld)
