@@ -1,24 +1,23 @@
-# README
+# 🔥 Rails Hot Module Reloading 🔥 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample repo that demonstrates HMR in Rails. This repo uses:
 
-Things you may want to cover:
+- [`react-rails`](https://github.com/reactjs/react-rails) gem.
+- [`react-hot-loader`](https://github.com/gaearon/react-hot-loader) JS module.
 
-* Ruby version
+## Starting the App
 
-* System dependencies
+```
+$ yarn
+$ bundle
+$ ./bin/webpack-dev-server
+$ rails s
+```
 
-* Configuration
+Go to [http://localhost:3000/pages/home](http://localhost:3000/pages/home).
 
-* Database creation
+## 🔥 Try HMR
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- 🔎 Note the time the page was rendered by Rails.
+- 📝 Edit the implementation of `app/javascript/components/HelloWorld.js` and save the file.
+- 🎉 See the changes happen without a page reload! 
