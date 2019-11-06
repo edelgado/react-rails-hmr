@@ -7,11 +7,11 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react-dom": "npm:@hot-loader/react-dom",
     "react_ujs": "^2.6.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.9.0",
-    "react-hot-loader": "^4.12.15"
+    "react-hot-loader": "^4.12.15",
+    "webpack-dev-server": "^3.9.0"
   }
 }
