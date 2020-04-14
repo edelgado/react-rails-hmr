@@ -2,7 +2,7 @@ import { hot } from 'react-hot-loader/root'
 import React, {useState} from "react"
 
 const HelloWorld = (props) => {
-    const [name, setName] = useState("World");
+    const [name, setName] = useState(props.name);
     const updateName = (name) => {
       setName(name);
     }
