@@ -1,17 +1,22 @@
 {
-  "name": "rails_hmr",
+  "name": "feelwe",
   "private": true,
   "dependencies": {
-    "@babel/preset-react": "^7.7.0",
-    "@rails/webpacker": "^4.0.7",
+    "@babel/preset-react": "^7.9.4",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.2.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",
-    "react": "^16.11.0",
+    "react": "^16.13.1",
     "react-dom": "npm:@hot-loader/react-dom",
-    "react_ujs": "^2.6.0"
+    "react_ujs": "^2.6.1",
+    "turbolinks": "^5.2.0"
   },
+  "version": "0.1.0",
   "devDependencies": {
     "react-hot-loader": "^4.12.15",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.10.3"
   }
 }
