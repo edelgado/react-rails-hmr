@@ -1,17 +1,25 @@
 import { hot } from 'react-hot-loader/root'
-import React from "react"
-import PropTypes from "prop-types"
-class HelloWorld extends React.Component {
-  render () {
+import React, {useState} from "react"
+
+const HelloWorld = (props) => {
+    const [name, setName] = useState(props.name);
+    const updateName = (name) => {
+      setName(name);
+    }
     return (
-      <React.Fragment>
-        Greeting: {this.props.greeting}
-      </React.Fragment>
+      <div>
+          <label>What is your name?</label>
+          <input
+            id="name"
+            type="text"
+            value={name}
+            onChange={e => updateName(e.target.value)}
+          />
+        <hr />
+        <h3>Hello, {name}!</h3>
+      </div>
     );
-  }
+
 }
 
-HelloWorld.propTypes = {
-  greeting: PropTypes.string
-};
 export default hot(HelloWorld)
